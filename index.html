@@ -465,24 +465,45 @@
         <form class="modal-form">
           <div class="modal-lable">
             <div class="lable-form">
-              <label for="user-name" class="modal-label-text">Ім'я</label>
+              <label for="user-name" class="modal-label-text label-text">Ім'я</label>
+              <div class="input-icon-form">
               <input type="text" id="user-name" name="user-name" class="modal-input">
+              <svg class="modal-input-icon" width="18px" height="18px">
+                <use href="./images/icomoon/symbol-defs.svg#icon-person" </use>
+              </svg></div>
             </div>
             <div class="lable-form">
-              <label for="user-tel" class="modal-label-tel">Телефон</label>
-              <input type="tel" id="user-tel" name="user-el" class="modal-input">
+              <label for="user-tel" class="modal-label-tel label-text">Телефон</label>
+              <div class="input-icon-form">
+                <input type="tel" id="user-tel" name="user-el" class="modal-input">
+                <svg class="modal-input-icon" width="18px" height="18px">
+                  <use href="./images/icomoon/symbol-defs.svg#icon-phone" </use>
+                </svg>
+              </div>
             </div>
             <div class="lable-form">
-              <label for="user-mail" class="modal-label-mail">Пошта</label>
-              <input type="email" id="user-mail" name="user-mail" class="modal-input">
+              <label for="user-mail" class="modal-label-mail label-text">Пошта</label>
+              <div class="input-icon-form">
+                <input type="email" id="user-mail" name="user-mail" class="modal-input">
+                <svg class="modal-input-icon" width="18px" height="18px">
+                  <use href="./images/icomoon/symbol-defs.svg#icon-email" </use>
+                </svg>
+              </div>
             </div>
             <div class="lable-form">
-              <label for="user-coment" class="modal-lable-coment">Коментар</label>
-              <textarea name="" id="user-coment" name="user-coment" placeholder="Введіть текст" cols="30" rows="10"></textarea>
+              <label for="user-coment" class="modal-lable-coment label-text">Коментар</label>
+              <textarea name="user-coment" class="coment-arena" id="user-coment" name="user-coment" placeholder="Введіть текст" cols="30" rows="10"></textarea>
             </div>
-            </div>
-          <input type="checkbox" name="policy" id="policy" class="modal-policy">
-          <label for="policy">Погоджуюся з розсилкою та приймаю <span class="policy-span">Умови договору</span></label>
+          </div>
+          <div class="policy-content">
+          <input type="checkbox" name="policy" id="policy" value="true" class="modal-policy">
+          <label for="policy" class="policy-icon">
+            <span>
+            <svg class="policy-icon-chek" width="11px" height="8px">
+              <use href="./images/icomoon/symbol-defs.svg#icon-chek02" </use>
+            </svg>
+          </span>Погоджуюся з розсилкою та приймаю <a class="policy-link" href="">Умови договору</a></label>
+          </div>
           <button type="submit" class="modal-button">Відправити
           </button>
         </form>
